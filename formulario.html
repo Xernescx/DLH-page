@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <!--Definmos la columna del header y los dividimos por las columnas de boostrap y centramos el logo -->
+        <div class="row">
+            <div class="col-md-1">
+                <img class="img-fluid conejo" src="img/500x500.jpg" alt="conejo">
+            </div>
+
+            <div class="text-center  col-md-10">
+                <img class="img-fluid logo " src="img/DLH-logo.png" alt="logo">
+            </div>
+        </div>
+    </header>
+    <!-- Usamos el navbar para la barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="inicio.html">DLH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-link active" href="inicio.html">Inicio <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="galleria.html">Galleria</a>
+                <a class="nav-link" href="formulario.html">Formulario</a>
+            </div>
+        </div>
+    </nav>
+    <div class="contenido">
+        <div class="bg-dark border-top" id="formD">
+            <!--Diseno del formulario-->
+            <div class="formulario bg-white d-flex justify-content-center flex-column">
+                <label>Nombre:</label><input type="text">
+                <label>Apellido:</label><input type="text">
+                <label>Correo</label><input type="email">
+                <label>Fecha de nacimiento</label><input type="date">
+                <!-- Tooltip -->
+                <input type="submit" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom"
+                    title="Envia el Formulario" value="ENVIAR">
+            </div>
+        </div>
+    </div>
+    <!--Footer con diseno -->
+    <footer class="card-footer  ">
+        <div class="row">
+            <div class="col-11 d-flex justify-content-star">
+                <p>Pagina creada por Carlos Jose Torres Baietti</p>
+            </div>
+            <div class="col-1 d-flex justify-content-between">
+                <a class="icon" href="https://www.youtube.com/user/rodrigoseptienprod"><i class="fab fa-youtube "></i></a>
+                <a class="icon" href="https://www.instagram.com/destripandolahistoria/?hl=es"><i class="fab fa-instagram "></i></a>
+                <a class="icon" href="https://twitter.com/pascuyrodri?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fab fa-twitter "></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
